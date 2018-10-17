@@ -28,10 +28,7 @@ import { PostListComponent } from './posts/post-list/post-list.component';
     MatButtonModule,
     MatToolbarModule,
     MatExpansionModule,
-<<<<<<< HEAD
-=======
     HttpClientModule,
->>>>>>> cde139f561e7916e13b94912b2228a302ad4b4d9
   ],
   providers: [],
   bootstrap: [AppComponent]
