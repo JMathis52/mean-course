@@ -1,25 +1,34 @@
 <mat-card>
   <form (submit)="onAddPost(postForm)" #postForm="ngForm">
+<<<<<<< HEAD
     <mat-form-field color="accent">
+=======
+    <mat-form-field appearance="outline" color="accent">
+      <mat-label>Post title</mat-label>
+>>>>>>> cde139f561e7916e13b94912b2228a302ad4b4d9
       <input
         matInput
         type="text"
         name="title"
-        placeholder="Post title"
         ngModel
         required
         #title="ngModel">
       <mat-error *ngIf="title.invalid">Please enter a title.</mat-error>
     </mat-form-field>
+<<<<<<< HEAD
     <mat-form-field color="accent">
+=======
+    <mat-form-field appearance="outline" color="accent">
+      <mat-label>Post content</mat-label>
+>>>>>>> cde139f561e7916e13b94912b2228a302ad4b4d9
       <textarea
         matInput
         rows="4"
         name="content"
-        placeholder="Post Content"
         ngModel
         required
-        #content="ngModel"></textarea>
+        #content="ngModel"
+        style="resize: none;"></textarea>
       <mat-error *ngIf="content.invalid">Please enter some content.</mat-error>
     </mat-form-field>
     <button

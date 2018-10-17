@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
+<<<<<<< HEAD
 body { margin: 0; font-family: 'Roboto', sans-serif; background: white;}
+=======
+body { margin: 0; font-family: 'Roboto', sans-serif;}
+>>>>>>> cde139f561e7916e13b94912b2228a302ad4b4d9
