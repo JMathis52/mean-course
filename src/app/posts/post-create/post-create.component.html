@@ -1,12 +1,13 @@
 <mat-card>
-  <form (submit)="onAddPost(postForm)" #postForm="ngForm">
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
+  <form (submit)="onSavePost(postForm)" #postForm="ngForm" *ngIf="!isLoading">
     <mat-form-field appearance="outline" color="accent">
       <mat-label>Post title</mat-label>
       <input
         matInput
         type="text"
         name="title"
-        ngModel
+        [ngModel]="post?.title"
         required
         #title="ngModel">
       <mat-error *ngIf="title.invalid">Please enter a title.</mat-error>
@@ -17,7 +18,7 @@
         matInput
         rows="4"
         name="content"
-        ngModel
+        [ngModel]="post?.content"
         required
         #content="ngModel"
         style="resize: none;"></textarea>
